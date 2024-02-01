@@ -17,5 +17,20 @@ img {
 }
 
 .article .description {
+  flex: 0 0 calc(100% - 40% - 1.618rem);
+}
 
+@media only screen and (min-width: 768px){
+  .article {
+    flex-flow: column wrap;
+}
+
+.article img {
+  flex: 0 0 100%;
+  max-width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.article .description {
+  flex: 0 0 100%;
 }
